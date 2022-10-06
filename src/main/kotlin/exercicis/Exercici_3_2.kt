@@ -1,3 +1,0 @@
-package exercicis
-
-fun main ()

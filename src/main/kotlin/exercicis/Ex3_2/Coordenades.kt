@@ -1,4 +1,4 @@
-package exercicis
+package exercicis.Ex3_2
 
 import java.io.Serializable
 

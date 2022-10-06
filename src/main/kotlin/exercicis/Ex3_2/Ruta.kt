@@ -1,5 +1,6 @@
-package exercicis
+package exercicis.Ex3_2
 
+import exercicis.Ex3_2.PuntGeo
 import java.io.Serializable
 
 class Ruta(var nom: String, var desnivell: Int, var desnivellAcumulat: Int, var llistaDePunts: MutableList<PuntGeo>) :
@@ -37,12 +38,13 @@ class Ruta(var nom: String, var desnivell: Int, var desnivellAcumulat: Int, var 
         println("Ruta: $nom")
         println("Desnivell: $desnivell")
         println("Desnivell Acumulat: $desnivellAcumulat")
-        println("Te $llistaDePunts punts")
+        println("Te ${llistaDePunts.size} punts")
 
-        for (i in 0..llistaDePunts.size){
-            println("Punt 1:"+ getPuntNom(i)+"("+ getPuntLongitud(i) +", -"+getPuntLatitud(i))
+        for (i in 0..llistaDePunts.size-1){
+            println("Punt 1: "+ getPuntNom(i)+"("+ getPuntLongitud(i) +", "+getPuntLatitud(i)+")")
         }
-
+        println()
+        println()
     }
 
 }
