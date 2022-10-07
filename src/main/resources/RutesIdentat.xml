@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rutes>
+    <ruta>
+        <nom>Pujada a Penyagolosa</nom>
+        <desnivell>530</desnivell>
+        <desnivellAcumulat>530</desnivellAcumulat>
+        <punts>
+            <punt num="1">
+                <nom>Encreuament</nom>
+                <latitud>-0.352507</latitud>
+                <longitud>40.25156</longitud>
+            </punt>
+            <punt num="2">
+                <nom>Barranc de la Pegunta</nom>
+                <latitud>-0.351713</latitud>
+                <longitud>40.247318</longitud>
+            </punt>
+            <punt num="3">
+                <nom>El Corralico</nom>
+                <latitud>-0.348859</latitud>
+                <longitud>40.231708</longitud>
+            </punt>
+            <punt num="4">
+                <nom>Penyagolosa</nom>
+                <latitud>-0.350339</latitud>
+                <longitud>40.222632</longitud>
+            </punt>
+        </punts>
+    </ruta><ruta><nom>La Magdalena</nom><desnivell>51</desnivell><desnivellAcumulat>84</desnivellAcumulat><punts><punt num="1"><nom>Segon Molí</nom><latitud>-0.029427</latitud><longitud>39.99628</longitud></punt><punt num="2"><nom>Caminàs</nom><latitud>-0.022569</latitud><longitud>40.00513</longitud></punt><punt num="3"><nom>Riu Sec</nom><latitud>-0.02237</latitud><longitud>40.006765</longitud></punt><punt num="4"><nom>Sant Roc</nom><latitud>-0.02289</latitud><longitud>40.017906</longitud></punt><punt num="5"><nom>Explanada</nom><latitud>-0.00633</latitud><longitud>40.034048</longitud></punt><punt num="6"><nom>La Magdalena</nom><latitud>-0.005856</latitud><longitud>40.034519</longitud></punt></punts></ruta></rutes>
