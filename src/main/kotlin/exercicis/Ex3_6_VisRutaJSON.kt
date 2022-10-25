@@ -15,10 +15,8 @@ class FinestraJSON : JFrame() {
         val moshi = Moshi.Builder().build()
         val adapter = moshi.adapter(Rutes::class.java)
         val rutes = adapter.fromJson(json)
-        if (rutes != null) {
-            for(i in rutes.rutes)
-                i.nom
-        }
+        llistaRutes = rutes!!.rutes as ArrayList<Ruta>
+
         setTitle("JSON: Punts d'una ruta")
         setSize(400, 300)
         setLayout(BorderLayout())
@@ -29,6 +27,9 @@ class FinestraJSON : JFrame() {
         add(panell2, BorderLayout.CENTER)
 
         var nomsLlistaRutes = arrayListOf<String>()
+        for (i in llistaRutes) {
+            nomsLlistaRutes.add(i.nom)
+        }
         // sentències per a omplir l'ArrayList anterior amb el nom de les rutes
 
         val combo = JComboBox(nomsLlistaRutes.toArray())
@@ -41,6 +42,16 @@ class FinestraJSON : JFrame() {
         combo.addActionListener {
             // accions quan s'ha seleccionat un element del combobox,
             // i que han de consistir en omplir el JTextArea
+            area.text = ""
+            val index = combo.selectedIndex
+            val ruta = llistaRutes.get(index)
+            val punts = ruta.llistaDePunts
+//            for (i in 0..ruta.size()-1){
+//                area.append(ruta.getPuntNom(i)+" ("+ruta.getPuntLongitud(i)+","+ruta.getPuntLatitud(i)+")\n")
+//            } altra opcio
+            for (i in punts){
+                area.append (i.nom+" ("+i.coord.longitud+","+i.coord.latitud+")\n")
+            }
 
         }
     }
