@@ -34,5 +34,5 @@ fun main(Args: Array<String>) {
         }
         println()
     }
-
+    reader.close()
 }

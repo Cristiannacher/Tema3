@@ -37,7 +37,7 @@ fun main(args: Array<String>) {
             ruta.appendChild(punts)
 
             for (i in 1..e.llistaDePunts.size - 1) {
-                var punt = doc.createElement("punt")
+                val punt = doc.createElement("punt")
                 punt.setAttribute("num", Integer.toString(i))
                 val nomPunt = doc.createElement("nom")
                 nomPunt.textContent = e.getPuntNom(i)
